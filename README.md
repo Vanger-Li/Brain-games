@@ -4,4 +4,4 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
-![Node.js-CI](https://github.com/Vanger-Li/frontend-project-lvl1/workflows/Node.js-CI/badge.svg)
+![Build Status](https://github.com/Vanger-Li/frontend-project-lvl1/workflows/nodejs.yml/badge.svg)
