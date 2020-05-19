@@ -3,8 +3,8 @@ import getRandomInteger from './function';
 
 const greeting = () => {
   console.log('Welcome to the Brain games');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}`);
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}`);
 };
 
 export const instructionsForGame = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
