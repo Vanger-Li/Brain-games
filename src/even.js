@@ -1,5 +1,5 @@
-import { isEven, getRandomInteger } from './function';
-import { instructionsForGame, getQuestion, getAnswerFromUser, userName } from './cli';
+import { isEven } from './function';
+import { instructionsForGame, getQuestion, getAnswerFromUser, getUserName } from './cli';
 import greeting from './cli';
 
 const brainEven = () => {
@@ -7,6 +7,7 @@ const brainEven = () => {
   instructionsForGame();
   const roundsCount = 3;
   for (let round = 0; round <= roundsCount; round += 1) {
+    const userName = getUserName();
     const question = getQuestion();
     const userAnswer = getAnswerFromUser();
     const trueAnswer = isEven(question);

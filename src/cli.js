@@ -1,11 +1,15 @@
 import readlineSync from 'readline-sync';
 import getRandomInteger from './function';
 
+let name;
+
 const greeting = () => {
   console.log('Welcome to the Brain games');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}`);
+  name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
 };
+
+export const getUserName = () => name;
 
 export const instructionsForGame = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
