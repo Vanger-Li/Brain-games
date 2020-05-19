@@ -1,6 +1,8 @@
 import { isEven } from './function';
-import { instructionsForGame, getQuestion, getAnswerFromUser, getUserName } from './cli';
-import greeting from './cli';
+import greeting, {
+  instructionsForGame, getQuestion, getAnswerFromUser, getUserName,
+} from './cli';
+
 
 const brainEven = () => {
   greeting();
@@ -18,7 +20,7 @@ const brainEven = () => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log('Congratulations!');
 };
 
 export default brainEven;
