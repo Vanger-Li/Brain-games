@@ -1,7 +1,15 @@
-import { isEven } from './function';
-import greeting, {
-  instructionsForGame, getQuestion, getAnswerFromUser, getUserName,
-} from './cli';
+import readlineSync from 'readline-sync';
+import { greeting, getUserName } from './cli';
+
+const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+const instructionsForGame = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+const getQuestion = () => getRandomInteger(1, 100);
+
+const getAnswerFromUser = () => readlineSync.question('Your answer: ');
+
+const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 
 const brainEven = () => {
