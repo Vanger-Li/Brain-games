@@ -4,13 +4,16 @@ import getRandomInteger from '../function.js';
 
 const instructionsForGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const question = getRandomInteger(1, 100);
-
 const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
-const trueAnswer = isEven(question);
+const getGameData = () => {
+  const integer = getRandomInteger(1, 100);
+  const question = `"Is the number ${integer} even?"`;
+  const trueAnswer = isEven(integer);
+  return [question, trueAnswer];
+};
 
 
-const brainEven = () => gameEngin(instructionsForGame, question, trueAnswer);
+const brainEven = () => gameEngin(instructionsForGame, getGameData);
 
 export default brainEven;

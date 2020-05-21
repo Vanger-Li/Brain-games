@@ -8,7 +8,7 @@ const greeting = () => {
   console.log(`Hello, ${userName}`);
 };
 
-const gameEngin = (instructionsForGame, question, trueAnswer) => {
+const gameEngin = (instructionsForGame, getGameData) => {
   console.log('Welcome to the Brain games');
   userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
@@ -17,6 +17,7 @@ const gameEngin = (instructionsForGame, question, trueAnswer) => {
 
   const roundsCount = 3;
   for (let round = 1; round <= roundsCount; round += 1) {
+    const [question, trueAnswer] = getGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== trueAnswer) {
