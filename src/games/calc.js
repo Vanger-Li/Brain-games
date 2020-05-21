@@ -21,7 +21,7 @@ const calculate = (firstOperand, secondOperand, operator) => {
 
 const getGameData = () => {
   const operator = operators[getRandomInteger(0, 2)];
-  const firstOperand = getRandomInteger(0, 10);
+  const firstOperand = getRandomInteger(0, 30);
   const secondOperand = getRandomInteger(0, 10);
   const question = `"What is the result of the expression: ${firstOperand} ${operator} ${secondOperand} ?"`;
   const trueAnswer = String(calculate(firstOperand, secondOperand, operator));
