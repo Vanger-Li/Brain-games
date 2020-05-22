@@ -16,6 +16,7 @@ const gameEngin = (instructionsForGame, getGameData) => {
   console.log(instructionsForGame);
 
   const roundsCount = 3;
+
   for (let round = 1; round <= roundsCount; round += 1) {
     const [question, trueAnswer] = getGameData();
     console.log(`Question: ${question}`);

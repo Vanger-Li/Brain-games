@@ -1,6 +1,5 @@
 import { gameEngin } from '../index.js';
 import getRandomInteger from '../function.js';
-import brainEven from './even.js';
 
 const instructionsForGame = 'Find the greatest common divisor of given numbers.';
 
