@@ -13,6 +13,9 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 
+brain-prog:
+	node bin/brain-progression.js
+
 publish-pack:
 	npm publish --dry-run
 
