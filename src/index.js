@@ -28,7 +28,7 @@ const gameEngin = (instructionsForGame, getGameData) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations! ${userName}`);
+  console.log(`Congratulations, ${userName}! You're won!`);
 };
 
 export { greeting, gameEngin };
