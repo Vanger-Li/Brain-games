@@ -5,6 +5,7 @@ const instructionsForGame = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
+// eslint-disable-next-line consistent-return
 const calculate = (firstOperand, secondOperand, operator) => {
   switch (operator) {
     case '+':
