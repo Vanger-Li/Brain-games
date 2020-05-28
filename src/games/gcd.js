@@ -15,7 +15,8 @@ const getGreatestCommonDivisor = (num1, num2) => {
 const getRoundData = () => {
   const firstInteger = getRandomInteger(1, 50);
   const secondInteger = getRandomInteger(1, 50);
-  const question = `"What is the greatest common divisor of ${firstInteger} and ${secondInteger}?"`;
+  const description = 'What is the greatest common divisor of';
+  const question = `"${description} ${firstInteger} and ${secondInteger}?"`;
   const correctAnswer = String(getGreatestCommonDivisor(firstInteger, secondInteger));
   return [question, correctAnswer];
 };

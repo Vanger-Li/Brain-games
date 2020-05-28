@@ -24,7 +24,8 @@ const getRoundData = () => {
   const operator = operators[getRandomInteger(0, operators.length - 1)];
   const firstOperand = getRandomInteger(0, 30);
   const secondOperand = getRandomInteger(0, 10);
-  const question = `"What is the result of the expression: ${firstOperand} ${operator} ${secondOperand} ?"`;
+  const description = 'What is the result of the expression';
+  const question = `"${description}: ${firstOperand} ${operator} ${secondOperand} ?"`;
   const correctAnswer = String(calculate(firstOperand, secondOperand, operator));
   return [question, correctAnswer];
 };

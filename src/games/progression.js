@@ -20,7 +20,8 @@ const getRoundData = () => {
   const randomIndex = getRandomInteger(0, 9);
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
-  const question = `"What number is missing in: ${progression}?"`;
+  const description = 'What number is missing in';
+  const question = `"${description}: ${progression}?"`;
   return [question, correctAnswer];
 };
 
