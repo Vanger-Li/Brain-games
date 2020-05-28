@@ -12,7 +12,7 @@ const getGreatestCommonDivisor = (num1, num2) => {
 };
 
 
-const getGameData = () => {
+const getRoundData = () => {
   const firstInteger = getRandomInteger(1, 50);
   const secondInteger = getRandomInteger(1, 50);
   const question = `"What is the greatest common divisor of ${firstInteger} and ${secondInteger}?"`;
@@ -20,6 +20,6 @@ const getGameData = () => {
   return [question, trueAnswer];
 };
 
-const runGcdGame = () => gameEngin(instructionsForGame, getGameData);
+const runGcdGame = () => gameEngin(instructionsForGame, getRoundData);
 
 export default runGcdGame;

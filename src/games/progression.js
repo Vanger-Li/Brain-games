@@ -15,7 +15,7 @@ const getProgression = () => {
 };
 
 
-const getGameData = () => {
+const getRoundData = () => {
   const progression = getProgression();
   const randomIndex = getRandomInteger(0, 9);
   const trueAnswer = String(progression[randomIndex]);
@@ -24,6 +24,6 @@ const getGameData = () => {
   return [question, trueAnswer];
 };
 
-const runProgressionGame = () => gameEngin(instructionsForGame, getGameData);
+const runProgressionGame = () => gameEngin(instructionsForGame, getRoundData);
 
 export default runProgressionGame;

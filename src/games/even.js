@@ -6,7 +6,7 @@ const instructionsForGame = 'Answer "yes" if the number is even, otherwise answe
 
 const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
-const getGameData = () => {
+const getRoundData = () => {
   const integer = getRandomInteger(1, 100);
   const question = `"Is the number ${integer} even?"`;
   const trueAnswer = isEven(integer);
@@ -14,6 +14,6 @@ const getGameData = () => {
 };
 
 
-const runEvenGame = () => gameEngin(instructionsForGame, getGameData);
+const runEvenGame = () => gameEngin(instructionsForGame, getRoundData);
 
 export default runEvenGame;

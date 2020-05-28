@@ -20,7 +20,7 @@ const calculate = (firstOperand, secondOperand, operator) => {
 };
 
 
-const getGameData = () => {
+const getRoundData = () => {
   const operator = operators[getRandomInteger(0, operators.length - 1)];
   const firstOperand = getRandomInteger(0, 30);
   const secondOperand = getRandomInteger(0, 10);
@@ -29,6 +29,6 @@ const getGameData = () => {
   return [question, trueAnswer];
 };
 
-const runCalcGame = () => gameEngin(instructionsForGame, getGameData);
+const runCalcGame = () => gameEngin(instructionsForGame, getRoundData);
 
 export default runCalcGame;

@@ -16,7 +16,7 @@ const isPrime = (number) => {
 };
 
 
-const getGameData = () => {
+const getRoundData = () => {
   const integer = getRandomInteger(1, 100);
   const question = `"Is the number ${integer} prime?"`;
   const trueAnswer = isPrime(integer);
@@ -24,6 +24,6 @@ const getGameData = () => {
 };
 
 
-const runPrimeGame = () => gameEngin(instructionsForGame, getGameData);
+const runPrimeGame = () => gameEngin(instructionsForGame, getRoundData);
 
 export default runPrimeGame;
