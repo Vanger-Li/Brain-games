@@ -25,8 +25,8 @@ const getRoundData = () => {
   const firstOperand = getRandomInteger(0, 30);
   const secondOperand = getRandomInteger(0, 10);
   const question = `"What is the result of the expression: ${firstOperand} ${operator} ${secondOperand} ?"`;
-  const trueAnswer = String(calculate(firstOperand, secondOperand, operator));
-  return [question, trueAnswer];
+  const correctAnswer = String(calculate(firstOperand, secondOperand, operator));
+  return [question, correctAnswer];
 };
 
 const runCalcGame = () => gameEngin(instructionsForGame, getRoundData);

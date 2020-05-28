@@ -9,8 +9,8 @@ const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 const getRoundData = () => {
   const integer = getRandomInteger(1, 100);
   const question = `"Is the number ${integer} even?"`;
-  const trueAnswer = isEven(integer);
-  return [question, trueAnswer];
+  const correctAnswer = isEven(integer);
+  return [question, correctAnswer];
 };
 
 

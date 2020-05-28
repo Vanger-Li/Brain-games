@@ -19,8 +19,8 @@ const isPrime = (number) => {
 const getRoundData = () => {
   const integer = getRandomInteger(1, 100);
   const question = `"Is the number ${integer} prime?"`;
-  const trueAnswer = isPrime(integer);
-  return [question, trueAnswer];
+  const correctAnswer = isPrime(integer);
+  return [question, correctAnswer];
 };
 
 

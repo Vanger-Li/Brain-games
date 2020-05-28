@@ -18,10 +18,10 @@ const getProgression = () => {
 const getRoundData = () => {
   const progression = getProgression();
   const randomIndex = getRandomInteger(0, 9);
-  const trueAnswer = String(progression[randomIndex]);
+  const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
   const question = `"What number is missing in: ${progression}?"`;
-  return [question, trueAnswer];
+  return [question, correctAnswer];
 };
 
 const runProgressionGame = () => gameEngin(instructionsForGame, getRoundData);

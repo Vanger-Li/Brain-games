@@ -16,8 +16,8 @@ const getRoundData = () => {
   const firstInteger = getRandomInteger(1, 50);
   const secondInteger = getRandomInteger(1, 50);
   const question = `"What is the greatest common divisor of ${firstInteger} and ${secondInteger}?"`;
-  const trueAnswer = String(getGreatestCommonDivisor(firstInteger, secondInteger));
-  return [question, trueAnswer];
+  const correctAnswer = String(getGreatestCommonDivisor(firstInteger, secondInteger));
+  return [question, correctAnswer];
 };
 
 const runGcdGame = () => gameEngin(instructionsForGame, getRoundData);
