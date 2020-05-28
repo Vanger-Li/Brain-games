@@ -20,6 +20,6 @@ const getGameData = () => {
   return [question, trueAnswer];
 };
 
-const brainGCD = () => gameEngin(instructionsForGame, getGameData);
+const runGcdGame = () => gameEngin(instructionsForGame, getGameData);
 
-export default brainGCD;
+export default runGcdGame;

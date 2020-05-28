@@ -24,6 +24,6 @@ const getGameData = () => {
   return [question, trueAnswer];
 };
 
-const brainProgression = () => gameEngin(instructionsForGame, getGameData);
+const runProgressionGame = () => gameEngin(instructionsForGame, getGameData);
 
-export default brainProgression;
+export default runProgressionGame;

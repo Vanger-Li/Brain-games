@@ -24,6 +24,6 @@ const getGameData = () => {
 };
 
 
-const brainPrime = () => gameEngin(instructionsForGame, getGameData);
+const runPrimeGame = () => gameEngin(instructionsForGame, getGameData);
 
-export default brainPrime;
+export default runPrimeGame;

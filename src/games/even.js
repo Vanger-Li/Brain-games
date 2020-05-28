@@ -14,6 +14,6 @@ const getGameData = () => {
 };
 
 
-const brainEven = () => gameEngin(instructionsForGame, getGameData);
+const runEvenGame = () => gameEngin(instructionsForGame, getGameData);
 
-export default brainEven;
+export default runEvenGame;
