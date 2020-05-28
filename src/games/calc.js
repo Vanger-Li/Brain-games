@@ -14,7 +14,7 @@ const calculate = (firstOperand, secondOperand, operator) => {
     case '*':
       return firstOperand * secondOperand;
     default:
-      return false;
+      break;
   }
 };
 
