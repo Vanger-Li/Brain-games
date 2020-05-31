@@ -1,19 +1,19 @@
 import { gameEngin } from '../index.js';
-import getRandomInteger from '../function.js';
+import { getRandomNumber } from '../utils.js';
 
 
-const instructionsForGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => (num % 2 === 0);
 
-const getRoundData = () => {
-  const integer = getRandomInteger(1, 100);
-  const question = `"Is the number ${integer} even?"`;
-  const correctAnswer = isEven(integer);
+const generateRoundData = () => {
+  const number = getRandomNumber(1, 100);
+  const correctAnswer = (isEven(number) ? 'yes' : 'no');
+  const question = `${number}`;
   return [question, correctAnswer];
 };
 
 
-const runEvenGame = () => gameEngin(instructionsForGame, getRoundData);
+const runEvenGame = () => gameEngin(gameDescription, generateRoundData);
 
 export default runEvenGame;

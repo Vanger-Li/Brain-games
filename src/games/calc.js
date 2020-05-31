@@ -1,7 +1,7 @@
 import { gameEngin } from '../index.js';
-import getRandomInteger from '../function.js';
+import { getRandomNumber } from '../utils.js';
 
-const instructionsForGame = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
@@ -20,16 +20,15 @@ const calculate = (firstOperand, secondOperand, operator) => {
 };
 
 
-const getRoundData = () => {
-  const operator = operators[getRandomInteger(0, operators.length - 1)];
-  const firstOperand = getRandomInteger(0, 30);
-  const secondOperand = getRandomInteger(0, 10);
-  const description = 'What is the result of the expression';
-  const question = `"${description}: ${firstOperand} ${operator} ${secondOperand} ?"`;
+const generateRoundData = () => {
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
+  const firstOperand = getRandomNumber(0, 30);
+  const secondOperand = getRandomNumber(0, 10);
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
   const correctAnswer = String(calculate(firstOperand, secondOperand, operator));
   return [question, correctAnswer];
 };
 
-const runCalcGame = () => gameEngin(instructionsForGame, getRoundData);
+const runCalcGame = () => gameEngin(gameDescription, generateRoundData);
 
 export default runCalcGame;

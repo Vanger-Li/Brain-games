@@ -6,17 +6,17 @@ const greeting = () => {
   console.log(`Hello, ${userName}`);
 };
 
-const gameEngin = (instructionsForGame, getRoundData) => {
+const gameEngin = (gameDescription, generateRoundData) => {
   console.log('Welcome to the Brain games');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
 
-  console.log(instructionsForGame);
+  console.log(gameDescription);
 
   const roundsCount = 3;
 
   for (let round = 1; round <= roundsCount; round += 1) {
-    const [question, correctAnswer] = getRoundData();
+    const [question, correctAnswer] = generateRoundData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {

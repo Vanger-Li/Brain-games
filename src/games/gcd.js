@@ -1,7 +1,7 @@
 import { gameEngin } from '../index.js';
-import getRandomInteger from '../function.js';
+import { getRandomNumber } from '../utils.js';
 
-const instructionsForGame = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 
 const getGreatestCommonDivisor = (num1, num2) => {
@@ -12,15 +12,14 @@ const getGreatestCommonDivisor = (num1, num2) => {
 };
 
 
-const getRoundData = () => {
-  const firstInteger = getRandomInteger(1, 50);
-  const secondInteger = getRandomInteger(1, 50);
-  const description = 'What is the greatest common divisor of';
-  const question = `"${description} ${firstInteger} and ${secondInteger}?"`;
-  const correctAnswer = String(getGreatestCommonDivisor(firstInteger, secondInteger));
+const generateRoundData = () => {
+  const firstNumber = getRandomNumber(1, 50);
+  const secondNumber = getRandomNumber(1, 50);
+  const question = `${firstNumber} ${secondNumber}`;
+  const correctAnswer = String(getGreatestCommonDivisor(firstNumber, secondNumber));
   return [question, correctAnswer];
 };
 
-const runGcdGame = () => gameEngin(instructionsForGame, getRoundData);
+const runGcdGame = () => gameEngin(gameDescription, generateRoundData);
 
 export default runGcdGame;
