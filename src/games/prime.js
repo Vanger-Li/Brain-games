@@ -1,4 +1,4 @@
-import { runGameEngin } from '../index.js';
+import { runGameEngine } from '../index.js';
 import { generateRandomNumber } from '../utils.js';
 
 
@@ -24,6 +24,6 @@ const generateRoundData = () => {
 };
 
 
-const runPrimeGame = () => runGameEngin(gameDescription, generateRoundData);
+const runPrimeGame = () => runGameEngine(gameDescription, generateRoundData);
 
 export default runPrimeGame;

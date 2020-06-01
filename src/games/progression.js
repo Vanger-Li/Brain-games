@@ -1,4 +1,4 @@
-import { runGameEngin } from '../index.js';
+import { runGameEngine } from '../index.js';
 import { generateRandomNumber } from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
@@ -24,6 +24,6 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const runProgressionGame = () => runGameEngin(gameDescription, generateRoundData);
+const runProgressionGame = () => runGameEngine(gameDescription, generateRoundData);
 
 export default runProgressionGame;
