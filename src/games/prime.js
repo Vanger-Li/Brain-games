@@ -6,8 +6,11 @@ const gameDescription = 'Answer "yes" if the number is prime, otherwise answer "
 
 const isPrime = (number) => {
   let counter = 2;
+  if (number <= 1) {
+    return false;
+  }
   while (counter <= number / 2) {
-    if (number % counter === 0 && number !== counter) {
+    if (number % counter === 0) {
       return false;
     }
     counter += 1;
