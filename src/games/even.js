@@ -1,5 +1,5 @@
-import { gameEngin } from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import { runGameEngin } from '../index.js';
+import { generateRandomNumber } from '../utils.js';
 
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -7,13 +7,13 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 const isEven = (num) => (num % 2 === 0);
 
 const generateRoundData = () => {
-  const number = getRandomNumber(1, 100);
+  const number = generateRandomNumber(1, 100);
   const correctAnswer = (isEven(number) ? 'yes' : 'no');
   const question = `${number}`;
   return [question, correctAnswer];
 };
 
 
-const runEvenGame = () => gameEngin(gameDescription, generateRoundData);
+const runEvenGame = () => runGameEngin(gameDescription, generateRoundData);
 
 export default runEvenGame;
