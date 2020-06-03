@@ -1,7 +1,6 @@
 # frontend-project-lvl1
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/b6c4a297ef4ad3b91629/maintainability)](https://codeclimate.com/github/Vanger-Li/frontend-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b6c4a297ef4ad3b91629/test_coverage)](https://codeclimate.com/github/Vanger-Li/frontend-project-lvl1/test_coverage)
 ![Build Status](https://github.com/Vanger-Li/frontend-project-lvl1/workflows/Build%20Status/badge.svg)
 
 ## Setup
