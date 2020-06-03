@@ -11,7 +11,6 @@ const generateProgression = (firstMember, step, progressionLength) => {
   return progression;
 };
 
-
 const generateRoundData = () => {
   const firstMember = generateRandomNumber(0, 50);
   const step = generateRandomNumber(0, 20);

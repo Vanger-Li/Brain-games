@@ -3,14 +3,12 @@ import { generateRandomNumber } from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-
 const isGreatestCommonDivisor = (num1, num2) => {
   if (num1 % num2 === 0) {
     return num2;
   }
   return isGreatestCommonDivisor(num2, num1 % num2);
 };
-
 
 const generateRoundData = () => {
   const firstNumber = generateRandomNumber(1, 50);
