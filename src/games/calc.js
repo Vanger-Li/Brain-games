@@ -19,7 +19,6 @@ const calculate = (firstOperand, secondOperand, operator) => {
   }
 };
 
-
 const generateRoundData = () => {
   const operator = operators[generateRandomNumber(0, operators.length - 1)];
   const firstOperand = generateRandomNumber(0, 30);
